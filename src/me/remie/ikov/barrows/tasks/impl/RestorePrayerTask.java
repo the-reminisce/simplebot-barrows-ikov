@@ -12,7 +12,7 @@ import simple.api.wrappers.SimpleItem;
  */
 public class RestorePrayerTask extends BarrowsTask {
 
-    private final String[] PRAYER_POTION_PARTIAL_NAMES = new String[] {
+    private final String[] PRAYER_POTION_PARTIAL_NAMES = new String[]{
             "Prayer potion", "Prayer flask", "Super restore", "Sanfew"
     };
 
@@ -22,6 +22,7 @@ public class RestorePrayerTask extends BarrowsTask {
 
     /**
      * Checks if we need to restore prayer points (if we are below the threshold).
+     *
      * @return true if we need to restore prayer points
      */
     @Override

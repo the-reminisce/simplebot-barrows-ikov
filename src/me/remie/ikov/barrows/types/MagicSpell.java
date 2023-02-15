@@ -42,6 +42,20 @@ public enum MagicSpell {
     }
 
     /**
+     * Gets the spell by the spell id.
+     *
+     * @param spellId the spell id
+     * @return the spell
+     */
+    public static MagicSpell getSpell(int spellId) {
+        for (MagicSpell spell : values()) {
+            if (spell.getSpellId() == spellId)
+                return spell;
+        }
+        return null;
+    }
+
+    /**
      * Gets the spell name.
      *
      * @return the spell name
@@ -79,25 +93,12 @@ public enum MagicSpell {
 
     /**
      * Gets the spell name and level. This is used for the combobox.
+     *
      * @return the spell name and level
      */
     @Override
     public String toString() {
-        return getSpellName()  + (this == NONE ? "" : " (Level: " + getLevel() + ")");
-    }
-
-    /**
-     * Gets the spell by the spell id.
-     *
-     * @param spellId the spell id
-     * @return the spell
-     */
-    public static MagicSpell getSpell(int spellId) {
-        for (MagicSpell spell : values()) {
-            if (spell.getSpellId() == spellId)
-                return spell;
-        }
-        return null;
+        return getSpellName() + (this == NONE ? "" : " (Level: " + getLevel() + ")");
     }
 
 

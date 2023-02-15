@@ -22,6 +22,7 @@ public abstract class BarrowsTask extends Task {
 
     /**
      * Gets the script instance.
+     *
      * @return the script instance.
      */
     public BarrowsScript getScript() {
@@ -30,6 +31,7 @@ public abstract class BarrowsTask extends Task {
 
     /**
      * Gets the settings instance. This holds all the settings for the script.
+     *
      * @return the settings instance.
      */
     public BarrowsSettings getSettings() {
@@ -38,6 +40,7 @@ public abstract class BarrowsTask extends Task {
 
     /**
      * Gets the state instance. This holds all the state specific variables for the script.
+     *
      * @return the state instance.
      */
     public BarrowsState getState() {
@@ -46,6 +49,7 @@ public abstract class BarrowsTask extends Task {
 
     /**
      * Sets the status of the script. This is a helper since it's not exposed in the task class.
+     *
      * @param status the status to set.
      */
     public void setStatus(String status) {

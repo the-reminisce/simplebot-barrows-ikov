@@ -19,6 +19,7 @@ public class HandleEquipmentTask extends BarrowsTask {
 
     /**
      * Checks if we have the equipment we need to kill the next brother in our inventory.
+     *
      * @return true if we have the equipment we need to kill the next brother in our inventory. false otherwise.
      */
     @Override

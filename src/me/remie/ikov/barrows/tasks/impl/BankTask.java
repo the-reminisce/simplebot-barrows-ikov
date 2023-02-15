@@ -16,11 +16,19 @@ public class BankTask extends BarrowsTask {
         super(script);
     }
 
+    /**
+     * Checks if we are at home and if we have a preset loaded.
+     *
+     * @return true if we are at home and do not have a preset loaded. False otherwise.
+     */
     @Override
     public boolean activate() {
         return getState().atHome() && !getState().isPresetLoaded();
     }
 
+    /**
+     * Handles interacting with the bank booth and loading the preset.
+     */
     @Override
     public void execute() {
         if (getState().isTeleportingHome()) {

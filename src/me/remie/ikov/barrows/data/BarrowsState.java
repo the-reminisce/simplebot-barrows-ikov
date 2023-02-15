@@ -15,18 +15,15 @@ import java.util.Random;
  */
 public class BarrowsState extends ClientAccessor<ClientContext> {
 
+    private final boolean[] killedBrothers = new boolean[6];
+    private final BarrowsHill[] RANDOMIZED_BROTHER_ORDER = new BarrowsHill[6];
+    private final Random random = new Random();
     private boolean cursesPrayerEnabled = false;
     private boolean presetLoaded = false;
     private boolean teleportingHome = false;
-
     private int totalTrips = 0;
     private int barrowsChestsOpened = 0;
     private int bossBrotherIndex = -1;
-
-    private final boolean[] killedBrothers = new boolean[6];
-    private final BarrowsHill[] RANDOMIZED_BROTHER_ORDER = new BarrowsHill[6];
-
-    private final Random random = new Random();
 
     public BarrowsState(ClientContext ctx) {
         super(ctx);
@@ -54,6 +51,7 @@ public class BarrowsState extends ClientAccessor<ClientContext> {
 
     /**
      * Checks if the player is at the home area.
+     *
      * @return if the player is at the home area.
      */
     public boolean atHome() {
@@ -62,6 +60,7 @@ public class BarrowsState extends ClientAccessor<ClientContext> {
 
     /**
      * Checks if the player is at the barrows area.
+     *
      * @return if the player is at the barrows area.
      */
     public boolean inBarrows() {
@@ -70,6 +69,7 @@ public class BarrowsState extends ClientAccessor<ClientContext> {
 
     /**
      * Checks if the player has loaded their preset.
+     *
      * @return if the player has loaded their preset.
      */
     public boolean isPresetLoaded() {
@@ -78,6 +78,7 @@ public class BarrowsState extends ClientAccessor<ClientContext> {
 
     /**
      * Sets the state of the preset loaded.
+     *
      * @param presetLoaded the state to set.
      */
     public void setPresetLoaded(boolean presetLoaded) {

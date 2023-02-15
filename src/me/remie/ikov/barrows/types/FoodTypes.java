@@ -39,6 +39,7 @@ public enum FoodTypes {
 
     /**
      * Gets the name of the food type.
+     *
      * @return the name of the food type.
      */
     public String getName() {
@@ -47,6 +48,7 @@ public enum FoodTypes {
 
     /**
      * Gets the food type by the name. This is used for the combobox.
+     *
      * @return the food type by the name.
      */
     @Override

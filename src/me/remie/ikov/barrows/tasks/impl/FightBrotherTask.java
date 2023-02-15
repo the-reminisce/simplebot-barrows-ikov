@@ -26,6 +26,7 @@ public class FightBrotherTask extends BarrowsTask {
      * This method activates the task if we have a hint arrow and the brother is not dead.
      * It will also set the hill and brother variables.
      * If the brother is dead, we will clean up the state and return false.
+     *
      * @return
      */
     @Override

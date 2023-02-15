@@ -19,6 +19,7 @@ public class HandleAutoCastTask extends BarrowsTask {
 
     /**
      * We only want to auto-cast if we have a spell selected, and we're on a melee hill.
+     *
      * @return true if we should auto-cast, false otherwise.
      */
     @Override

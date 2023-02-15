@@ -38,6 +38,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the food type.
+     *
      * @return the food type.
      */
     public FoodTypes getFoodType() {
@@ -46,6 +47,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the health to eat at.
+     *
      * @return the health to eat at.
      */
     public int getEatHealth() {
@@ -54,6 +56,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the prayer points to drink at.
+     *
      * @return the drink prayer.
      */
     public int getDrinkPrayer() {
@@ -62,6 +65,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the magic spell.
+     *
      * @return the magic spell.
      */
     public MagicSpell getMagicSpell() {
@@ -70,6 +74,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the primary offensive prayer.
+     *
      * @return the primary offensive prayer.
      */
     public OffensivePrayer getPrimaryOffensivePrayer() {
@@ -78,6 +83,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the secondary offensive prayer.
+     *
      * @return the secondary offensive prayer.
      */
     public OffensivePrayer getSecondaryOffensivePrayer() {
@@ -86,6 +92,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the preset id.
+     *
      * @return the preset id.
      */
     public int getPresetId() {
@@ -94,6 +101,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the names of the primary equipment.
+     *
      * @return the names of the primary equipment.
      */
     public String[] getPrimaryEquipment() {
@@ -102,6 +110,7 @@ public class BarrowsSettings {
 
     /**
      * Gets the names of the secondary equipment.
+     *
      * @return the names of the secondary equipment.
      */
     public String[] getSecondaryEquipment() {

@@ -16,6 +16,7 @@ public class HandleCurrentTombTask extends BarrowsTask {
 
     /**
      * Handles current crypt that we are in
+     *
      * @param script
      */
     public HandleCurrentTombTask(final BarrowsScript script) {
@@ -24,6 +25,7 @@ public class HandleCurrentTombTask extends BarrowsTask {
 
     /**
      * Checks if we are in a tomb and if we are, we handle it accordingly (climb stairs, kill brother, etc)
+     *
      * @return true if we are in a tomb
      */
     @Override

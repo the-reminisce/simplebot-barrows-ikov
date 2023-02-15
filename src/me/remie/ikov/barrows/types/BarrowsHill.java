@@ -41,8 +41,7 @@ public enum BarrowsHill {
     VERAC_HILL(20772, "Verac the Defiled", SimplePrayers.Prayers.PROTECT_FROM_MELEE,
             new WorldPoint(3558, 3298, 0), new WorldPoint(3578, 9703, 0),
             new WorldPoint(3573, 9705, 0), new WorldArea(new WorldPoint(3558, 3296, 0), new WorldPoint(3555, 3300, 0)),
-            new WorldArea(new WorldPoint(3579, 9703, 3), new WorldPoint(3567, 9711, 3)))
-    ;
+            new WorldArea(new WorldPoint(3579, 9703, 3), new WorldPoint(3567, 9711, 3)));
 
     private final int objectId;
 
@@ -69,6 +68,20 @@ public enum BarrowsHill {
         this.coffinTile = coffinTile;
         this.hillArea = hillArea;
         this.tombArea = tombArea;
+    }
+
+    /**
+     * Gets the hill by npc name.
+     *
+     * @param name the npc name.
+     * @return the hill.
+     */
+    public static BarrowsHill getHillByNpcName(String name) {
+        for (BarrowsHill hill : values()) {
+            if (hill.getNpcName().equals(name))
+                return hill;
+        }
+        return null;
     }
 
     /**
@@ -109,6 +122,7 @@ public enum BarrowsHill {
 
     /**
      * Gets the coffin tile.
+     *
      * @return the coffin tile.
      */
     public WorldPoint getCoffinTile() {
@@ -143,20 +157,6 @@ public enum BarrowsHill {
     }
 
     /**
-     * Gets the hill by npc name.
-     *
-     * @param name the npc name.
-     * @return the hill.
-     */
-    public static BarrowsHill getHillByNpcName(String name) {
-        for (BarrowsHill hill : values()) {
-            if (hill.getNpcName().equals(name))
-                return hill;
-        }
-        return null;
-    }
-
-    /**
      * Gets the brother index.
      *
      * @return the brother index.
@@ -171,7 +171,7 @@ public enum BarrowsHill {
      * @return true if melee, false otherwise.
      */
     public boolean isMelee() {
-    	return prayer == SimplePrayers.Prayers.PROTECT_FROM_MELEE;
+        return prayer == SimplePrayers.Prayers.PROTECT_FROM_MELEE;
     }
 
 }

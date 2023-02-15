@@ -17,6 +17,7 @@ public class TeleportBarrowsTask extends BarrowsTask {
 
     /**
      * Checks if we are at home and if we have loaded a preset
+     *
      * @return true if we are at home and have loaded a preset
      */
     @Override

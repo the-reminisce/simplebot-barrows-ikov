@@ -18,6 +18,7 @@ public class HealingFountainTask extends BarrowsTask {
 
     /**
      * If we are at home, and our health or prayer is not 100%, then we should drink from the fountain.
+     *
      * @return true if we should drink from the fountain.
      */
     @Override

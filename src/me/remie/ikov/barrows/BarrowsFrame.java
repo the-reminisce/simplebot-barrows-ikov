@@ -33,16 +33,14 @@ public class BarrowsFrame extends JFrame {
 
     private final ClientContext ctx;
     private final BarrowsScript script;
-
+    private final DefaultListModel<String> primaryEquipmentListModel = new DefaultListModel<>();
+    private final DefaultListModel<String> secondaryEquipmentListModel = new DefaultListModel<>();
     private JComboBox<FoodTypes> foodComboBox;
     private JSpinner eatHealthSpinner;
     private JSpinner drinkPrayerSpinner;
     private JSpinner presetSpinner;
     private JComboBox<OffensivePrayer> primaryOffensivePrayerComboBox;
     private JComboBox<OffensivePrayer> secondaryOffensivePrayerComboBox;
-    private final DefaultListModel<String> primaryEquipmentListModel = new DefaultListModel<>();
-    private final DefaultListModel<String> secondaryEquipmentListModel = new DefaultListModel<>();
-
     private JComboBox<MagicSpell> magicSpellComboBox;
 
     public BarrowsFrame(final BarrowsScript script) {
@@ -186,7 +184,6 @@ public class BarrowsFrame extends JFrame {
     }
 
     /**
-     *
      * @return
      */
     private List<String> getEquipment() {
@@ -276,6 +273,7 @@ public class BarrowsFrame extends JFrame {
 
     /**
      * Creates a new settings object from the GUI settings.
+     *
      * @return the settings object
      */
     private BarrowsSettings getSettings() {

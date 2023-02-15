@@ -11,6 +11,7 @@ public class TeleportHomeTask extends BarrowsTask {
 
     /**
      * If we're teleporting home, and we're not at home, then we should teleport home.
+     *
      * @return true if we should teleport home, false otherwise.
      */
     @Override

@@ -22,6 +22,7 @@ public class HandleChestRoomTask extends BarrowsTask {
      * If we have killed all the brothers, we will return true.
      * If we have not killed all the brothers, we will check if we have a hint arrow.
      * If we have a hint arrow, we will return false.
+     *
      * @return true if we are in the chest room and have killed all the brothers or if we are in the chest room and have no hint arrow. False otherwise.
      */
     @Override
